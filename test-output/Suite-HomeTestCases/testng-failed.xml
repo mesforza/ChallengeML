@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite-HomeTestCases]">
+  <listeners>
+    <listener class-name="MercadoLibre.Listeners"/>
+  </listeners>
+  <test name="Home(failed)">
+    <classes>
+      <class name="MercadoLibre.MoreInformationMercadoPagoTestCase">
+        <methods>
+          <include name="MoreInformationMercadoPago"/>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- MercadoLibre.MoreInformationMercadoPagoTestCase -->
+    </classes>
+  </test> <!-- Home(failed) -->
+</suite> <!-- Failed suite [Suite-HomeTestCases] -->

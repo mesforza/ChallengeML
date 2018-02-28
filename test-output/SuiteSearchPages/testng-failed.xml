@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [SuiteSearchPages]">
+  <listeners>
+    <listener class-name="MercadoLibre.Listeners"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="MercadoLibre.SearchPS4TiendaNoOficialTestCase">
+        <methods>
+          <include name="SearchPS4TiendaNoOficial"/>
+        </methods>
+      </class> <!-- MercadoLibre.SearchPS4TiendaNoOficialTestCase -->
+      <class name="MercadoLibre.SearchNotFoundBikesByPriceTestCase">
+        <methods>
+          <include name="SearchNotFoundBikesByPrice"/>
+        </methods>
+      </class> <!-- MercadoLibre.SearchNotFoundBikesByPriceTestCase -->
+      <class name="MercadoLibre.SearchByCategorySportsBikesTestCase">
+        <methods>
+          <include name="SearchByCategorySportsBikes"/>
+        </methods>
+      </class> <!-- MercadoLibre.SearchByCategorySportsBikesTestCase -->
+      <class name="MercadoLibre.SearchSonyCamaraTiendaOficialTestCase">
+        <methods>
+          <include name="SearchSonyCamaraTiendaOficial"/>
+        </methods>
+      </class> <!-- MercadoLibre.SearchSonyCamaraTiendaOficialTestCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [SuiteSearchPages] -->

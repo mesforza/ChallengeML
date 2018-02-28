@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite-SearchTestCases">
+
+  		<listeners> 
+        	<listener class-name="MercadoLibre.Listeners"/>
+        </listeners>
+                    
+  <test thread-count="5" name="Search Not Found Bikes By Price">
+    <classes>
+      <class name="MercadoLibre.SearchNotFoundBikesByPriceTestCase"/>
+    </classes>
+  </test>        
+      
+  <test thread-count="5" name="Search By Category Bikes Click">
+    <classes>
+      <class name="MercadoLibre.SearchByCategorySportsBikesClickTestCase"/>
+    </classes>
+  </test>  
+  
+   <test thread-count="5" name="Search By Category Bikes Actions">
+    <classes>
+      <class name="MercadoLibre.SearchByCategorySportsBikesWithActionsTestCase"/>
+    </classes>
+  </test>  
+  
+  <test thread-count="5" name="Search By Category Bikes JavaScript">
+    <classes>
+      <class name="MercadoLibre.SearchByCategorySportsBikesWithJavaScriptTestCase"/>
+    </classes>
+  </test>  
+      
+  <test thread-count="5" name="Search Sony Camara Tienda Oficial">
+    <classes>
+      <class name="MercadoLibre.SearchSonyCamaraTiendaOficialTestCase"/>
+    </classes>
+  </test>  
+    
+  <test thread-count="5" name="Search PS4 Tienda No Oficial">
+    <classes>  
+      <class name="MercadoLibre.SearchPS4TiendaNoOficialTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

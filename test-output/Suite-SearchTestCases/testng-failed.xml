@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite-SearchTestCases]">
+  <listeners>
+    <listener class-name="MercadoLibre.Listeners"/>
+  </listeners>
+  <test name="Search By Category Bikes Click(failed)">
+    <classes>
+      <class name="MercadoLibre.SearchByCategorySportsBikesClickTestCase">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+          <include name="SearchByCategorySportsBikes"/>
+        </methods>
+      </class> <!-- MercadoLibre.SearchByCategorySportsBikesClickTestCase -->
+    </classes>
+  </test> <!-- Search By Category Bikes Click(failed) -->
+  <test name="Search By Category Bikes Actions(failed)">
+    <classes>
+      <class name="MercadoLibre.SearchByCategorySportsBikesWithActionsTestCase">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+          <include name="SearchByCategorySportsBikes"/>
+        </methods>
+      </class> <!-- MercadoLibre.SearchByCategorySportsBikesWithActionsTestCase -->
+    </classes>
+  </test> <!-- Search By Category Bikes Actions(failed) -->
+  <test name="Search By Category Bikes JavaScript(failed)">
+    <classes>
+      <class name="MercadoLibre.SearchByCategorySportsBikesWithJavaScriptTestCase">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+          <include name="SearchByCategorySportsBikes"/>
+        </methods>
+      </class> <!-- MercadoLibre.SearchByCategorySportsBikesWithJavaScriptTestCase -->
+    </classes>
+  </test> <!-- Search By Category Bikes JavaScript(failed) -->
+  <test name="Search Sony Camara Tienda Oficial(failed)">
+    <classes>
+      <class name="MercadoLibre.SearchSonyCamaraTiendaOficialTestCase">
+        <methods>
+          <include name="SearchSonyCamaraTiendaOficial"/>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- MercadoLibre.SearchSonyCamaraTiendaOficialTestCase -->
+    </classes>
+  </test> <!-- Search Sony Camara Tienda Oficial(failed) -->
+</suite> <!-- Failed suite [Suite-SearchTestCases] -->

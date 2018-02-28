@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite-LoginTestCases]">
+  <listeners>
+    <listener class-name="MercadoLibre.Listeners"/>
+  </listeners>
+  <test name="Login multiple users(failed)">
+    <classes>
+      <class name="MercadoLibre.LoginMultipleUsersTestCase">
+        <methods>
+          <include name="initialize"/>
+          <include name="Login" invocation-numbers="0 1"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- MercadoLibre.LoginMultipleUsersTestCase -->
+    </classes>
+  </test> <!-- Login multiple users(failed) -->
+</suite> <!-- Failed suite [Suite-LoginTestCases] -->

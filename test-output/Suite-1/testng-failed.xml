@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite-1]">
+  <test name="TestHelpPages(failed)">
+    <classes>
+      <class name="MercadoLibre.SearchHelpHowBuyTestCase">
+        <methods>
+          <include name="SearchHelpHowBuy"/>
+        </methods>
+      </class> <!-- MercadoLibre.SearchHelpHowBuyTestCase -->
+      <class name="MercadoLibre.HelpTakeGoodPhotosTestCase">
+        <methods>
+          <include name="HelpTakeGoodPhotos"/>
+        </methods>
+      </class> <!-- MercadoLibre.HelpTakeGoodPhotosTestCase -->
+    </classes>
+  </test> <!-- TestHelpPages(failed) -->
+</suite> <!-- Failed suite [Suite-1] -->
