@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28748" started-at="2018-02-28T23:48:21Z" finished-at="2018-02-28T23:48:49Z">
+  <suite name="Default suite" duration-ms="19577" started-at="2018-03-03T22:06:19Z" finished-at="2018-03-03T22:06:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28748" started-at="2018-02-28T23:48:21Z" finished-at="2018-02-28T23:48:49Z">
-      <class name="MercadoLibre.CountLinksMoreInformationTestCase">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:MercadoLibre.CountLinksMoreInformationTestCase@3159c4b8]" name="initialize" is-config="true" duration-ms="11684" started-at="2018-02-28T20:48:21Z" finished-at="2018-02-28T20:48:32Z">
+    <test name="Default test" duration-ms="19577" started-at="2018-03-03T22:06:19Z" finished-at="2018-03-03T22:06:39Z">
+      <class name="MercadoLibre.SearchPS4TiendaNoOficialTestCase">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MercadoLibre.SearchPS4TiendaNoOficialTestCase@2d3379b4]" name="initialize" is-config="true" duration-ms="5512" started-at="2018-03-03T19:06:19Z" finished-at="2018-03-03T19:06:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="CountLinksMoreInformation()[pri:0, instance:MercadoLibre.CountLinksMoreInformationTestCase@3159c4b8]" name="CountLinksMoreInformation" duration-ms="8034" started-at="2018-02-28T20:48:32Z" finished-at="2018-02-28T20:48:40Z">
+        <test-method status="PASS" signature="SearchPS4TiendaNoOficial()[pri:0, instance:MercadoLibre.SearchPS4TiendaNoOficialTestCase@2d3379b4]" name="SearchPS4TiendaNoOficial" duration-ms="13901" started-at="2018-03-03T19:06:24Z" finished-at="2018-03-03T19:06:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CountLinksMoreInformation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:MercadoLibre.CountLinksMoreInformationTestCase@3159c4b8]" name="teardown" is-config="true" duration-ms="8987" started-at="2018-02-28T20:48:40Z" finished-at="2018-02-28T20:48:49Z">
+        </test-method> <!-- SearchPS4TiendaNoOficial -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:MercadoLibre.SearchPS4TiendaNoOficialTestCase@2d3379b4]" name="teardown" is-config="true" duration-ms="120" started-at="2018-03-03T19:06:38Z" finished-at="2018-03-03T19:06:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- MercadoLibre.CountLinksMoreInformationTestCase -->
+      </class> <!-- MercadoLibre.SearchPS4TiendaNoOficialTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

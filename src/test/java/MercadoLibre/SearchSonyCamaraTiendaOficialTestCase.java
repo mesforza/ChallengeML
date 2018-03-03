@@ -3,8 +3,8 @@ package MercadoLibre;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.AfterTest;
@@ -14,6 +14,8 @@ import org.testng.annotations.Test;
 import Resources.Base;
 
 public class SearchSonyCamaraTiendaOficialTestCase extends Base {
+	
+	private static Logger log =LogManager.getLogger(SearchSonyCamaraTiendaOficialTestCase.class.getName());
 
 	@BeforeTest
 	public void initialize() throws IOException
@@ -27,7 +29,8 @@ public class SearchSonyCamaraTiendaOficialTestCase extends Base {
 	{
 	//Home page
 	HomePage mlhomepage=new HomePage (driver);
-	mlhomepage.Nationality().click();
+	mlhomepage.NationalityArg().click();
+	log.info("Entering the website of Mercado Libre Argentina");
 	mlhomepage.Login().click();
 	File src=	 ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	FileUtils.copyFile(src,new File("C:\\Users\\Martín\\screenshot.png"));

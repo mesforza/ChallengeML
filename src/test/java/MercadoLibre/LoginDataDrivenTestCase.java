@@ -2,6 +2,8 @@ package MercadoLibre;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.logging.log4j.*;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -10,6 +12,8 @@ import org.testng.annotations.Test;
 import Resources.Base;
 
 public class LoginDataDrivenTestCase extends Base{
+
+	private static Logger log =LogManager.getLogger(LoginDataDrivenTestCase.class.getName());
 
 	public WebDriver driver=null;
 	
@@ -25,7 +29,8 @@ public class LoginDataDrivenTestCase extends Base{
 	{
 		//Home Page
 		HomePage mlhomepage=new HomePage (driver);
-		mlhomepage.Nationality().click();
+		mlhomepage.NationalityArg().click();
+		log.info("Entering the website of Mercado Libre Argentina");
 		mlhomepage.Login().click();
 		
 		//Login Page

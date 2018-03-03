@@ -12,7 +12,7 @@ public class HomePage {
 	
 	public WebDriver driver;
 	
-	By Nationality=By.id("AR");
+	By NationalityArg=By.id("AR");
 	By Login=By.xpath("//*[@id='nav-header-menu']/a[2]");
 	By username=By.id("user_id");
 	By continueButton=By.xpath("//*[@id='login_user_form']/div[2]/input");
@@ -35,9 +35,9 @@ public class HomePage {
 	}
 
 
-	public WebElement Nationality() {
+	public WebElement NationalityArg() {
 		// TODO Auto-generated method stub
-		return driver.findElement(Nationality);
+		return driver.findElement(NationalityArg);
 	}
 
 

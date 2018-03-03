@@ -3,6 +3,7 @@ package MercadoLibre;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.*;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -11,6 +12,8 @@ import org.testng.annotations.Test;
 import Resources.Base;
 
 public class LoginWithErrorsTestCase extends Base {
+	
+	private static Logger log =LogManager.getLogger(LoginWithErrorsTestCase.class.getName());
 	
 	@BeforeTest
 	public void initialize() throws IOException
@@ -27,7 +30,8 @@ public class LoginWithErrorsTestCase extends Base {
 				
 		//Home Page
 		HomePage mlhomepage=new HomePage (driver);
-		mlhomepage.Nationality().click();
+		mlhomepage.NationalityArg().click();
+		log.info("Entering the website of Mercado Libre Argentina");
 		mlhomepage.Login().click();
 		
 		//Login Page

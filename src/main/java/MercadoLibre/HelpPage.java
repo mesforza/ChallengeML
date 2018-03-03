@@ -1,10 +1,5 @@
 package MercadoLibre;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertSame;
-
-import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -83,12 +78,6 @@ public class HelpPage {
 		WebElement mlproductrecomendation =driver.findElement(Recomendation4);
 		Assert.assertEquals(mlproductrecomendation.getText(),"¡Empieza a sacar fotos increíbles!");
 		System.out.println("Start taking amazing photos.");
-	}
-
-	
-	private Object getTextValue(String string) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	public WebElement SearchInput() {

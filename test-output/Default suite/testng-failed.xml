@@ -3,13 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="MercadoLibre.SearchByCategorySportsBikesWithJavaScriptTestCase">
+      <class name="MercadoLibre.SearchPS4TiendaNoOficialTestCase">
         <methods>
+          <include name="SearchPS4TiendaNoOficial"/>
           <include name="initialize"/>
           <include name="teardown"/>
-          <include name="SearchByCategorySportsBikes"/>
         </methods>
-      </class> <!-- MercadoLibre.SearchByCategorySportsBikesWithJavaScriptTestCase -->
+      </class> <!-- MercadoLibre.SearchPS4TiendaNoOficialTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

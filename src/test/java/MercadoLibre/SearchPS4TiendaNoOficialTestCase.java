@@ -2,6 +2,7 @@ package MercadoLibre;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+import org.apache.logging.log4j.*;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -10,6 +11,8 @@ import org.testng.annotations.Test;
 import Resources.Base;
 
 public class SearchPS4TiendaNoOficialTestCase extends Base{
+
+	private static Logger log =LogManager.getLogger(SearchPS4TiendaNoOficialTestCase.class.getName());
 
 	public WebDriver driver;
 	
@@ -26,7 +29,8 @@ public class SearchPS4TiendaNoOficialTestCase extends Base{
 	//Home page
 	HomePage mlhomepage=new HomePage (driver);
 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-	mlhomepage.Nationality().click();
+	mlhomepage.NationalityArg().click();
+	log.info("Entering the website of Mercado Libre Argentina");
 	mlhomepage.NavSearch().sendKeys("Play Station 4");
 	mlhomepage.NavSearchButton().click();
 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

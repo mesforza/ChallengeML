@@ -4,24 +4,24 @@
   <listeners>
     <listener class-name="MercadoLibre.Listeners"/>
   </listeners>
-  <test name="Search By Category Bikes Click(failed)">
+  <test name="Search Not Found Bikes By Price(failed)">
     <classes>
-      <class name="MercadoLibre.SearchByCategorySportsBikesClickTestCase">
+      <class name="MercadoLibre.SearchNotFoundBikesByPriceTestCase">
         <methods>
-          <include name="teardown"/>
+          <include name="SearchNotFoundBikesByPrice"/>
           <include name="initialize"/>
-          <include name="SearchByCategorySportsBikes"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- MercadoLibre.SearchByCategorySportsBikesClickTestCase -->
+      </class> <!-- MercadoLibre.SearchNotFoundBikesByPriceTestCase -->
     </classes>
-  </test> <!-- Search By Category Bikes Click(failed) -->
+  </test> <!-- Search Not Found Bikes By Price(failed) -->
   <test name="Search By Category Bikes Actions(failed)">
     <classes>
       <class name="MercadoLibre.SearchByCategorySportsBikesWithActionsTestCase">
         <methods>
           <include name="initialize"/>
           <include name="teardown"/>
-          <include name="SearchByCategorySportsBikes"/>
+          <include name="SearchByCategorySportsBikesWitchActions"/>
         </methods>
       </class> <!-- MercadoLibre.SearchByCategorySportsBikesWithActionsTestCase -->
     </classes>
@@ -32,20 +32,20 @@
         <methods>
           <include name="initialize"/>
           <include name="teardown"/>
-          <include name="SearchByCategorySportsBikes"/>
+          <include name="SearchByCategorySportsBikesWithJavaScript"/>
         </methods>
       </class> <!-- MercadoLibre.SearchByCategorySportsBikesWithJavaScriptTestCase -->
     </classes>
   </test> <!-- Search By Category Bikes JavaScript(failed) -->
-  <test name="Search Sony Camara Tienda Oficial(failed)">
+  <test name="Search PS4 Tienda No Oficial(failed)">
     <classes>
-      <class name="MercadoLibre.SearchSonyCamaraTiendaOficialTestCase">
+      <class name="MercadoLibre.SearchPS4TiendaNoOficialTestCase">
         <methods>
-          <include name="SearchSonyCamaraTiendaOficial"/>
+          <include name="SearchPS4TiendaNoOficial"/>
           <include name="initialize"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- MercadoLibre.SearchSonyCamaraTiendaOficialTestCase -->
+      </class> <!-- MercadoLibre.SearchPS4TiendaNoOficialTestCase -->
     </classes>
-  </test> <!-- Search Sony Camara Tienda Oficial(failed) -->
+  </test> <!-- Search PS4 Tienda No Oficial(failed) -->
 </suite> <!-- Failed suite [Suite-SearchTestCases] -->

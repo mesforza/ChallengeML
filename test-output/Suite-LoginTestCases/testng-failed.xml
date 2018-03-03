@@ -9,7 +9,7 @@
       <class name="MercadoLibre.LoginMultipleUsersTestCase">
         <methods>
           <include name="initialize"/>
-          <include name="Login" invocation-numbers="0 1"/>
+          <include name="Login" invocation-numbers="0"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- MercadoLibre.LoginMultipleUsersTestCase -->

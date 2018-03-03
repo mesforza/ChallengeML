@@ -2,6 +2,7 @@ package MercadoLibre;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+import org.apache.logging.log4j.*;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -10,6 +11,8 @@ import Resources.Base;
 
 
 public class SearchNotFoundBikesByPriceTestCase extends Base{
+
+	private static Logger log =LogManager.getLogger(SearchNotFoundBikesByPriceTestCase.class.getName());
 
 	@BeforeTest
 	public void initialize() throws IOException
@@ -23,7 +26,8 @@ public class SearchNotFoundBikesByPriceTestCase extends Base{
 	{
 		//Home Page
 		HomePage mlhomepage=new HomePage (driver);
-		mlhomepage.Nationality().click();
+		mlhomepage.NationalityArg().click();
+		log.info("Entering the website of Mercado Libre Argentina");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
 		mlhomepage.CategoriesMouseHoverActions();

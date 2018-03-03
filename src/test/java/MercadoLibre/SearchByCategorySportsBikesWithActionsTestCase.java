@@ -7,8 +7,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import Resources.Base;
 import org.apache.logging.log4j.*;
-//import org.apache.log4j.LogManager;
-//import org.apache.log4j.Logger;
 
 public class SearchByCategorySportsBikesWithActionsTestCase extends Base{
 	
@@ -22,12 +20,12 @@ public class SearchByCategorySportsBikesWithActionsTestCase extends Base{
 	}
 	
 	@Test
-	public void SearchByCategorySportsBikes() throws Exception
+	public void SearchByCategorySportsBikesWitchActions() throws Exception
 	{
 		//Home Page
 		HomePage mlhomepage=new HomePage (driver);
-		mlhomepage.Nationality().click();
-		log.info("Found the nationality Argentina");
+		mlhomepage.NationalityArg().click();
+		log.info("Entering the website of Mercado Libre Argentina");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		mlhomepage.CategoriesMouseHoverActions();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

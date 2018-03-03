@@ -1,8 +1,10 @@
-MercadoLibre\LoginPage.class
-MercadoLibre\HomePage.class
+Resources\Base.class
 MercadoLibre\AccountPage.class
-MercadoLibre\ProductPage.class
+Resources\ExtentReporterNG.class
 MercadoLibre\TiendaOficialPage.class
 MercadoLibre\HelpPage.class
 MercadoLibre\SearchResultsPage.class
 MercadoLibre\TiendaOficialHomePage.class
+MercadoLibre\LoginPage.class
+MercadoLibre\HomePage.class
+MercadoLibre\ProductPage.class

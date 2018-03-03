@@ -4,6 +4,7 @@
 
 		<listeners> 
         	<listener class-name="MercadoLibre.Listeners"/>
+        	<listener class-name="Resources.ExtentReporterNG"/>
         </listeners>
           
   <test thread-count="5" name="Search Help How Buy">

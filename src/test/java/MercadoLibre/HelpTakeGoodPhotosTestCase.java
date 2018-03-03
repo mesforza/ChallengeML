@@ -2,8 +2,9 @@ package MercadoLibre;
 
 import java.io.IOException;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -13,7 +14,7 @@ import Resources.Base;
 public class HelpTakeGoodPhotosTestCase extends Base{
 	
 	
-	public static Logger log =LogManager.getLogger(HelpTakeGoodPhotosTestCase.class.getName());
+	private static Logger log =LogManager.getLogger(HelpTakeGoodPhotosTestCase.class.getName());
 	
 	@BeforeTest
 	public void initialize() throws IOException
@@ -28,10 +29,10 @@ public class HelpTakeGoodPhotosTestCase extends Base{
 	{
 		//Home Page
 		HomePage mlhomepage=new HomePage (driver);
-		mlhomepage.Nationality().click();
-		log.info("Found the nationality Argentina");
+		mlhomepage.NationalityArg().click();
+		log.info("Entering the website of Mercado Libre Argentina.");
 		mlhomepage.OptionHelp().click();
-		log.info("Found the option Help");
+		log.info("Entering the Help page.");
 		
 		//Help Page
 		HelpPage mlhelppage=new HelpPage (driver);
